@@ -1,0 +1,9 @@
+faiss-cpu
+sentence-transformers
+requests
+beautifulsoup4
+lxml
+validators
+huggingface_hub
+groq
+python-dotenv
