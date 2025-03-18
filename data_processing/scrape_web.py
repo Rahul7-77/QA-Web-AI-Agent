@@ -29,7 +29,7 @@ def scrape_web(start_url, max_depth=3, max_pages=12):
             for element in soup.select('nav, header, footer, .nav, .footer, script, style'):
                 element.decompose()
 
-            text_elements = soup.find_all(['p', 'h1', 'h2', 'h3', 'li', 'td', 'th'])
+            text_elements = soup.find_all(['p', 'h1', 'h2', 'h3', 'h4' , 'h5' ,'h6', 'li', 'td', 'th'])
             text = " ".join([element.get_text().strip() for element in text_elements if element.get_text().strip()]) 
 
             if text:
